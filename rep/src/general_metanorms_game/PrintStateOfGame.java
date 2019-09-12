@@ -11,7 +11,7 @@ public class PrintStateOfGame {
 	public static void makeFile(int times) {
 		try {
 			//o—Íæ‚ğì¬‚·‚é
-			FileWriter fw = new FileWriter("D:\\work\\lab\\game\\yazirusi_game"+times+".txt", false);  //¦‚P
+			FileWriter fw = new FileWriter("C:\\work\\lab\\game\\yazirusi_game"+times+".txt", false);  //¦‚P
 			PrintWriter pw = new PrintWriter(new BufferedWriter(fw));
 			
 			pw.println("Game"+times+"start!!");
@@ -28,7 +28,7 @@ public class PrintStateOfGame {
 	public static void writeLap(int lap,int times) {
 		try {
 			//o—Íæ‚ğì¬‚·‚é
-			FileWriter fw = new FileWriter("D:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
+			FileWriter fw = new FileWriter("C:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
 			PrintWriter pw = new PrintWriter(new BufferedWriter(fw));
 			
 			pw.println("lap_"+lap);
@@ -45,7 +45,7 @@ public class PrintStateOfGame {
 	public static void writeAgent(int num,int times,Agent[] agents) {
 		try {
 			//o—Íæ‚ğì¬‚·‚é
-			FileWriter fw = new FileWriter("D:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
+			FileWriter fw = new FileWriter("C:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
 			PrintWriter pw = new PrintWriter(new BufferedWriter(fw));
 			
 			pw.println("Agent"+num);
@@ -62,7 +62,7 @@ public class PrintStateOfGame {
 	public static void writeCoordination(int num,int times,Agent[] agents) {
 		try {
 			//o—Íæ‚ğì¬‚·‚é
-			FileWriter fw = new FileWriter("D:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
+			FileWriter fw = new FileWriter("C:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
 			PrintWriter pw = new PrintWriter(new BufferedWriter(fw));
 			
 			pw.println(num+" cooperated.");
@@ -78,7 +78,7 @@ public class PrintStateOfGame {
 	public static void writeBetrayal(int num,int times,Agent[] agents) {
 		try {
 			//o—Íæ‚ğì¬‚·‚é
-			FileWriter fw = new FileWriter("D:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
+			FileWriter fw = new FileWriter("C:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
 			PrintWriter pw = new PrintWriter(new BufferedWriter(fw));
 			
 			pw.println(num+" betrayed!");
@@ -94,7 +94,7 @@ public class PrintStateOfGame {
 	public static void writeFind(int numi,int numj,int times,Agent[] agents) {
 		try {
 			//o—Íæ‚ğì¬‚·‚é
-			FileWriter fw = new FileWriter("D:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
+			FileWriter fw = new FileWriter("C:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
 			PrintWriter pw = new PrintWriter(new BufferedWriter(fw));
 			
 			pw.print("           "+numj+" find "+numi+".");
@@ -110,7 +110,7 @@ public class PrintStateOfGame {
 	public static void writeNotFind(int numi,int numj,int times,Agent[] agents) {
 		try {
 			//o—Íæ‚ğì¬‚·‚é
-			FileWriter fw = new FileWriter("D:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
+			FileWriter fw = new FileWriter("C:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
 			PrintWriter pw = new PrintWriter(new BufferedWriter(fw));
 			
 			pw.println("           "+numj+" not find "+numi+"!");
@@ -126,7 +126,7 @@ public class PrintStateOfGame {
 	public static void writeComment(int numi,int numj,int times,Agent[] agents) {
 		try {
 			//o—Íæ‚ğì¬‚·‚é
-			FileWriter fw = new FileWriter("D:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
+			FileWriter fw = new FileWriter("C:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
 			PrintWriter pw = new PrintWriter(new BufferedWriter(fw));
 			
 			pw.println(numj+" comment "+numi+"!");
@@ -142,7 +142,7 @@ public class PrintStateOfGame {
 	public static void writeNotComment(int numi,int numj,int times,Agent[] agents) {
 		try {
 			//o—Íæ‚ğì¬‚·‚é
-			FileWriter fw = new FileWriter("D:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
+			FileWriter fw = new FileWriter("C:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
 			PrintWriter pw = new PrintWriter(new BufferedWriter(fw));
 			
 			pw.println(numj+" not comment "+numi+".");
@@ -158,7 +158,7 @@ public class PrintStateOfGame {
 	public static void writeMetaComment(int numi,int numj,int times,Agent[] agents) {
 		try {
 			//o—Íæ‚ğì¬‚·‚é
-			FileWriter fw = new FileWriter("D:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
+			FileWriter fw = new FileWriter("C:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
 			PrintWriter pw = new PrintWriter(new BufferedWriter(fw));
 			
 			pw.println(numj+" metacomment "+numi+"!");
@@ -174,7 +174,7 @@ public class PrintStateOfGame {
 	public static void writeNotMetaComment(int numi,int numj,int times,Agent[] agents) {
 		try {
 			//o—Íæ‚ğì¬‚·‚é
-			FileWriter fw = new FileWriter("D:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
+			FileWriter fw = new FileWriter("C:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
 			PrintWriter pw = new PrintWriter(new BufferedWriter(fw));
 			
 			pw.println(numj+" not metacomment "+numi+".");
@@ -190,7 +190,7 @@ public class PrintStateOfGame {
 	public static void writePunish1(int numi,int numj,int times,Agent[] agents) {
 		try {
 			//o—Íæ‚ğì¬‚·‚é
-			FileWriter fw = new FileWriter("D:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
+			FileWriter fw = new FileWriter("C:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
 			PrintWriter pw = new PrintWriter(new BufferedWriter(fw));
 			
 			pw.println(numj+" punish(1) "+numi+"!");
@@ -206,7 +206,7 @@ public class PrintStateOfGame {
 	public static void writeNotPunish1(int numi,int numj,int times,Agent[] agents) {
 		try {
 			//o—Íæ‚ğì¬‚·‚é
-			FileWriter fw = new FileWriter("D:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
+			FileWriter fw = new FileWriter("C:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
 			PrintWriter pw = new PrintWriter(new BufferedWriter(fw));
 			
 			pw.println(numj+" not punish(1) "+numi+".");
@@ -222,7 +222,7 @@ public class PrintStateOfGame {
 	public static void writeFind2(int numi,int numj,int times,Agent[] agents) {
 		try {
 			//o—Íæ‚ğì¬‚·‚é
-			FileWriter fw = new FileWriter("D:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
+			FileWriter fw = new FileWriter("C:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
 			PrintWriter pw = new PrintWriter(new BufferedWriter(fw));
 			
 			pw.print("                                      "+numj+" find "+numi+".");
@@ -238,7 +238,7 @@ public class PrintStateOfGame {
 	public static void writeNotFind2(int numi,int numj,int times,Agent[] agents) {
 		try {
 			//o—Íæ‚ğì¬‚·‚é
-			FileWriter fw = new FileWriter("D:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
+			FileWriter fw = new FileWriter("C:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
 			PrintWriter pw = new PrintWriter(new BufferedWriter(fw));
 			
 			pw.println("                                      "+numj+" not find "+numi+"!");
@@ -254,7 +254,7 @@ public class PrintStateOfGame {
 	public static void writePunish2(int numi,int numj,int times,Agent[] agents) {
 		try {
 			//o—Íæ‚ğì¬‚·‚é
-			FileWriter fw = new FileWriter("D:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
+			FileWriter fw = new FileWriter("C:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
 			PrintWriter pw = new PrintWriter(new BufferedWriter(fw));
 			
 			pw.println(numj+" punish(2) "+numi+"!");
@@ -270,7 +270,7 @@ public class PrintStateOfGame {
 	public static void writeNotPunish2(int numi,int numj,int times,Agent[] agents) {
 		try {
 			//o—Íæ‚ğì¬‚·‚é
-			FileWriter fw = new FileWriter("D:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
+			FileWriter fw = new FileWriter("C:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
 			PrintWriter pw = new PrintWriter(new BufferedWriter(fw));
 			
 			pw.println(numj+" not punish(2) "+numi+"!");
@@ -286,7 +286,7 @@ public class PrintStateOfGame {
 	public static void writeEnd(int times) {
 		try {
 			//o—Íæ‚ğì¬‚·‚é
-			FileWriter fw = new FileWriter("D:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
+			FileWriter fw = new FileWriter("C:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
 			PrintWriter pw = new PrintWriter(new BufferedWriter(fw));
 			
 			pw.println();
@@ -302,7 +302,7 @@ public class PrintStateOfGame {
 	public static void writeLine(int times) {
 		try {
 			//o—Íæ‚ğì¬‚·‚é
-			FileWriter fw = new FileWriter("D:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
+			FileWriter fw = new FileWriter("C:\\work\\lab\\game\\yazirusi_game"+times+".txt", true);  //¦‚P
 			PrintWriter pw = new PrintWriter(new BufferedWriter(fw));
 			
 			pw.println("---------------");

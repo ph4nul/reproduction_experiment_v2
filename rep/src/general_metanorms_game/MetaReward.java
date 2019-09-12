@@ -25,11 +25,11 @@ public class MetaReward {
 	
 	private void checkCoordination(int times,Agent[] agents,MakeRnd rnd) {
 		for(int i=0;i<n;i++) {
-			PrintStateOfGame.writeAgent(i,times, agents);
+			//PrintStateOfGame.writeAgent(i,times, agents);
 			double S=agents[i].getS();
 			//System.out.println(agents[i].getS());
 			if(S<agents[i].getAgentValueBL(0)/7.0) {	//協調	
-				PrintStateOfGame.writeCoordination(i,times, agents);
+				//PrintStateOfGame.writeCoordination(i,times, agents);
 				for(int j=0;j<n;j++) {
 					if(j==i) agents[j].addScore(F);
 					else agents[j].addScore(M);
@@ -37,12 +37,12 @@ public class MetaReward {
 				CheckOthers1(times,"Phase2",i,S,agents,rnd);
 			}
 			else {	//裏切り
-				PrintStateOfGame.writeBetrayal(i,times, agents);
+				//PrintStateOfGame.writeBetrayal(i,times, agents);
 			}
-			PrintStateOfGame.writeEnd(times);
-			PrintScoreOfGame.writeScore(i,times,n,agents);
+			//PrintStateOfGame.writeEnd(times);
+			//PrintScoreOfGame.writeScore(i,times,n,agents);
 		}
-		PrintStateOfGame.writeLine(times);
+		//PrintStateOfGame.writeLine(times);
 	}
 	
 	private void CheckOthers1(int times,String name,int i,double S,Agent[] agents,MakeRnd rnd) {
@@ -55,20 +55,20 @@ public class MetaReward {
 			}
 			
 			if(rnd1<S) {	//投稿に気づいた
-				PrintStateOfGame.writeFind(i,j,times,agents);
+				//PrintStateOfGame.writeFind(i,j,times,agents);
 				if(rnd2<(agents[j].getAgentValueBL(1)/7.0)) {	//コメントする
 					agents[j].addScore(C);
 					agents[i].addScore(R);
-					PrintStateOfGame.writeComment(i,j,times,agents);
+					//PrintStateOfGame.writeComment(i,j,times,agents);
 					CheckOthers2(times,"Phase3",i,j,S,agents,rnd);
 					
 				}
 				else {	//コメントしない
-					PrintStateOfGame.writeNotComment(i,j,times,agents);
+					//PrintStateOfGame.writeNotComment(i,j,times,agents);
 				}
 			}
 			else {	//気づかなかった
-				PrintStateOfGame.writeNotFind(i,j,times,agents);
+				//PrintStateOfGame.writeNotFind(i,j,times,agents);
 			}
 		}
 	}
@@ -83,25 +83,25 @@ public class MetaReward {
 			}
 				
 			if(rnd1<S) {	//コメントに気づいた
-				PrintStateOfGame.writeFind2(j,k,times,agents);
+				//PrintStateOfGame.writeFind2(j,k,times,agents);
 				if(rnd2<(agents[k].getAgentValueBL(1)/7.0)) {	//裏切りに対する指摘
 					agents[k].addScore(CC);
 					agents[j].addScore(RR);
-					PrintStateOfGame.writeMetaComment(j,k,times,agents);
+					//PrintStateOfGame.writeMetaComment(j,k,times,agents);
 				}
 				else {	//指摘しない
 					//PrintStateOfGame.writeNotMetaComment(j,k,times,agents);
 				}
 			}
 			else {
-				PrintStateOfGame.writeNotFind2(j,k,times,agents);
+				//PrintStateOfGame.writeNotFind2(j,k,times,agents);
 			}
 		}
 	}
 	
 	public void game(int times,Agent[] agents,MakeRnd rnd) {
-		PrintStateOfGame.makeFile(times);
-		PrintScoreOfGame.makeFile(times,n);
+		//PrintStateOfGame.makeFile(times);
+		//PrintScoreOfGame.makeFile(times,n);
 		for(int i=0;i<4;i++) {
 			//System.out.println("phase"+i);
 			for(int j=0;j<n;j++) {	//発見率セット
@@ -110,8 +110,8 @@ public class MetaReward {
 			}
 			//System.out.println("--------------------");
 			
-			PrintStateOfGame.writeLap(i,times);
-			PrintScoreOfGame.writeLap(i,times);
+			//PrintStateOfGame.writeLap(i,times);
+			//PrintScoreOfGame.writeLap(i,times);
 			
 			checkCoordination(times,agents,rnd);
 		}

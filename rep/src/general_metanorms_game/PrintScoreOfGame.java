@@ -11,7 +11,7 @@ public class PrintScoreOfGame {
 	public static void makeFile(int times,int num) {
 		try {
 			//o—Íæ‚ğì¬‚·‚é
-			FileWriter fw = new FileWriter("D:\\work\\lab\\game\\score\\score_"+times+".csv", false);  //¦‚P
+			FileWriter fw = new FileWriter("C:\\work\\lab\\game\\score\\score_"+times+".csv", false);  //¦‚P
 			PrintWriter pw = new PrintWriter(new BufferedWriter(fw));
 			
 			pw.print(",");
@@ -32,7 +32,7 @@ public class PrintScoreOfGame {
 	public static void writeLap(int lap,int times) {
 		try {
 			//o—Íæ‚ğì¬‚·‚é
-			FileWriter fw = new FileWriter("D:\\work\\lab\\game\\score\\score_"+times+".csv", true);  //¦‚P
+			FileWriter fw = new FileWriter("C:\\work\\lab\\game\\score\\score_"+times+".csv", true);  //¦‚P
 			PrintWriter pw = new PrintWriter(new BufferedWriter(fw));
 			
 			pw.println("lap_"+lap);
@@ -49,7 +49,7 @@ public class PrintScoreOfGame {
 	public static void writeScore(int phase,int times,int num,Agent[] agents) {
 		try {
 			//o—Íæ‚ğì¬‚·‚é
-			FileWriter fw = new FileWriter("D:\\work\\lab\\game\\score\\score_"+times+".csv", true);  //¦‚P
+			FileWriter fw = new FileWriter("C:\\work\\lab\\game\\score\\score_"+times+".csv", true);  //¦‚P
 			PrintWriter pw = new PrintWriter(new BufferedWriter(fw));
 			
 			pw.print(phase);

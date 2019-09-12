@@ -11,7 +11,7 @@ public class CalculationBVL {
 	public static void SetHeader() {
 		try {
 			//o—Íæ‚ğì¬‚·‚é
-			FileWriter fw = new FileWriter("D:\\work\\lab\\simulation\\BVLaverage.csv", false);  //¦‚P
+			FileWriter fw = new FileWriter("C:\\work\\lab\\simulation\\BVLaverage.csv", false);  //¦‚P
 			PrintWriter pw = new PrintWriter(new BufferedWriter(fw));
         
 			//ƒwƒbƒ_[‘‚«‚İ
@@ -40,7 +40,7 @@ public class CalculationBVL {
 	public static void Export(Agent[] agents,int n,int times) {
 		try {
 			//o—Íæ‚ğì¬‚·‚é
-			FileWriter fw = new FileWriter("D:\\work\\lab\\simulation\\BVLaverage.csv", true);  //¦‚P
+			FileWriter fw = new FileWriter("C:\\work\\lab\\simulation\\BVLaverage.csv", true);  //¦‚P
 			PrintWriter pw = new PrintWriter(new BufferedWriter(fw));
         
 			//ƒwƒbƒ_[‘‚«‚İ
