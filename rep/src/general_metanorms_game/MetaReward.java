@@ -90,7 +90,7 @@ public class MetaReward {
 					PrintStateOfGame.writeMetaComment(j,k,times,agents);
 				}
 				else {	//Žw“E‚µ‚È‚¢
-					PrintStateOfGame.writeNotMetaComment(j,k,times,agents);
+					//PrintStateOfGame.writeNotMetaComment(j,k,times,agents);
 				}
 			}
 			else {
